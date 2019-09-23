@@ -246,7 +246,7 @@
                 
               
 
-              <time title="创建时间：2019-09-23 09:46:42 / 修改时间：18:34:23" itemprop="dateCreated datePublished" datetime="2019-09-23T09:46:42+08:00">2019-09-23</time>
+              <time title="创建时间：2019-09-23 09:46:42 / 修改时间：18:45:39" itemprop="dateCreated datePublished" datetime="2019-09-23T09:46:42+08:00">2019-09-23</time>
             </span>
           
             
@@ -287,10 +287,10 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vi /etc/profile</span><br></pre></td></tr></table></figure>
 
 <p>在里面加入:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> PATH=<span class="string">"<span class="variable">$PATH</span>:/my_new_path"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=&quot;$PATH:/my_new_path&quot;</span><br></pre></td></tr></table></figure>
 
 <p>使用source命令使修改立刻生效： </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">source</span>  /etc/profile</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">source</span> /etc/profile</span><br></pre></td></tr></table></figure>
 
 <h2 id="方法三"><a href="#方法三" class="headerlink" title="方法三"></a>方法三</h2><p>修改.bashrc文件，这种方法更为安全，它可以把使用这些环境变量的权限控制到用户级别，这里是针对某一个特定的用户，如果你需要给某个用户权限使用这些环境变量，你只需要修改其个人用户主目录下的.bashrc文件就可以了。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vi /root/.bashrc</span><br></pre></td></tr></table></figure>
@@ -299,10 +299,13 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=&quot;$PATH:/my_new_path&quot;</span><br></pre></td></tr></table></figure>
 
 <p>使用source命令使修改立刻生效： </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">source</span>  /root/.bashrc</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">source</span> /root/.bashrc</span><br></pre></td></tr></table></figure>
 
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>后面两种方法一般需要重新注销系统才能生效，也可以使用source 命令，使修改的配置立刻生效。<br>最后可以通过echo命令测试一下：</p>
+<h2 id="查看效果"><a href="#查看效果" class="headerlink" title="查看效果"></a>查看效果</h2><p>最后可以通过echo命令测试一下：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">echo</span> <span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="友情提示"><a href="#友情提示" class="headerlink" title="友情提示"></a>友情提示</h2><p>后面两种方法一般需要重新注销系统才能生效，也可以使用source命令，使修改的配置立刻生效。</p>
+
         
       
     </div>
