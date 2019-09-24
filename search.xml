@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Windows | 镜像下载]]></title>
-    <url>%2F2019%2F09%2F24%2FWindows-%E9%95%9C%E5%83%8F%E4%B8%8B%E8%BD%BD%2F</url>
-    <content type="text"></content>
+    <title><![CDATA[Linux | 环境变量]]></title>
+    <url>%2F2019%2F09%2F19%2F%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%2F</url>
+    <content type="text"><![CDATA[环境变量什么是环境变量呢？简要的说，就是指定一个目录，运行软件的时候，相关的程序将会按照该目录寻找相关文件。 在Linux系统下，如果你下载并安装了应用程序，很有可能在键入它的名称时出现“command not found”的提示内容。如果每次都到安装目标文件夹内，找到可执行文件来进行操作就太繁琐了。这涉及到环境变量 PATH 的设置问题。 方法一控制台中直接设置，不赞成使用这种方法，因为换个Shell，你的设置就无效了，因此这种方法仅仅是临时使用，以后要使用的时候又要重新设置，比较麻烦。 这个只针对特定的Shell： 1$ PATH="$PATH:/my_new_path" （关闭Shell，会还原PATH） 方法二修改/etc/profile文件，如果你的计算机仅仅作为开发使用时推荐使用这种方法，因为所有用户的Shell都有权使用这些环境变量，可能会给系统带来安全性问题。 这里是针对所有的用户的，所有的Shell； 1$ vi /etc/profile 在里面加入: 1export PATH=&quot;$PATH:/my_new_path&quot; 使用source命令使修改立刻生效： 1$ source /etc/profile 方法三修改.bashrc文件，这种方法更为安全，它可以把使用这些环境变量的权限控制到用户级别，这里是针对某一个特定的用户，如果你需要给某个用户权限使用这些环境变量，你只需要修改其个人用户主目录下的.bashrc文件就可以了。 1$ vi /root/.bashrc 在里面加入： 1export PATH=&quot;$PATH:/my_new_path&quot; 使用source命令使修改立刻生效： 1$ source /root/.bashrc 查看效果最后可以通过echo命令测试一下： 1$ echo $PATH 友情提示后面两种方法一般需要重新注销系统才能生效，也可以使用source命令，使修改的配置立刻生效。]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Windows 镜像下载]]></title>
+    <url>%2F2019%2F09%2F09%2FWindows-%E9%95%9C%E5%83%8F%E4%B8%8B%E8%BD%BD%2F</url>
+    <content type="text"><![CDATA[Windows 镜像下载 Windows 10 Windows 7 Enterprise with Service Pack 1 (x64) - DVD (Chinese-Simplified) 文件名 cn_windows_10_business_editions_version_1903_updated_aug_2019_x64_dvd_3760ef19.iso SHA1 4846448F90F6DE70F054A2E1E24BE45C7BF9DC33 文件大小 4.85GB 发布时间 2019-08-21 ed2k://|file|cn_windows_10_business_editions_version_1903_updated_aug_2019_x64_dvd_3760ef19.iso|5205960704|9778A975BE33943A8F09B4D0D44848EC|/ Windows 7 Windows 7 Enterprise with Service Pack 1 (x64) - DVD (Chinese-Simplified) 文件名 cn_windows_7_enterprise_with_sp1_x64_dvd_u_677685.iso SHA1 9BA5E85596C2F25BE59F7E96139D83D4CB261A62 文件大小 3.04GB 发布时间 2011-05-12 ed2k://|file|cn_windows_7_enterprise_with_sp1_x64_dvd_u_677685.iso|3265574912|E9DB2607EA3B3540F3FE2E388F8C53C4|/ Windows XP Windows XP Professional with Service Pack 3 (x86) - CD (Chinese-Simplified) 文件名 zh-hans_windows_xp_professional_with_service_pack_3_x86_cd_x14-80404.iso SHA1 69DBF131116760932DCF132ADE111D6B45778098 文件大小 601.04MB 发布时间 2008-05-01 ed2k://|file|zh-hans_windows_xp_professional_with_service_pack_3_x86_cd_x14-80404.iso|630239232|CD0900AFA058ACB6345761969CBCBFF4|/]]></content>
       <categories>
         <category>Windows</category>
       </categories>
@@ -12,7 +23,7 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Linux | 环境变量]]></title>
+    <title><![CDATA[Linux 环境变量]]></title>
     <url>%2F2019%2F09%2F09%2FLinux-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%2F</url>
     <content type="text"><![CDATA[环境变量什么是环境变量呢？简要的说，就是指定一个目录，运行软件的时候，相关的程序将会按照该目录寻找相关文件。 在Linux系统下，如果你下载并安装了应用程序，很有可能在键入它的名称时出现“command not found”的提示内容。如果每次都到安装目标文件夹内，找到可执行文件来进行操作就太繁琐了。这涉及到环境变量 PATH 的设置问题。 方法一控制台中直接设置，不赞成使用这种方法，因为换个Shell，你的设置就无效了，因此这种方法仅仅是临时使用，以后要使用的时候又要重新设置，比较麻烦。 这个只针对特定的Shell： 1$ PATH="$PATH:/my_new_path" （关闭Shell，会还原PATH） 方法二修改/etc/profile文件，如果你的计算机仅仅作为开发使用时推荐使用这种方法，因为所有用户的Shell都有权使用这些环境变量，可能会给系统带来安全性问题。 这里是针对所有的用户的，所有的Shell； 1$ vi /etc/profile 在里面加入: 1export PATH=&quot;$PATH:/my_new_path&quot; 使用source命令使修改立刻生效： 1$ source /etc/profile 方法三修改.bashrc文件，这种方法更为安全，它可以把使用这些环境变量的权限控制到用户级别，这里是针对某一个特定的用户，如果你需要给某个用户权限使用这些环境变量，你只需要修改其个人用户主目录下的.bashrc文件就可以了。 1$ vi /root/.bashrc 在里面加入： 1export PATH=&quot;$PATH:/my_new_path&quot; 使用source命令使修改立刻生效： 1$ source /root/.bashrc 查看效果最后可以通过echo命令测试一下： 1$ echo $PATH 友情提示后面两种方法一般需要重新注销系统才能生效，也可以使用source命令，使修改的配置立刻生效。]]></content>
       <categories>
