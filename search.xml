@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[默认端口]]></title>
-    <url>%2F2019%2F09%2F26%2F%E9%BB%98%E8%AE%A4%E7%AB%AF%E5%8F%A3%2F</url>
+    <title><![CDATA[Linux 默认端口]]></title>
+    <url>%2F2019%2F09%2F26%2FLinux-%E9%BB%98%E8%AE%A4%E7%AB%AF%E5%8F%A3%2F</url>
     <content type="text"><![CDATA[默认端口 22：SSH（安全登录）、SCP（文件传输）、端口号重定向 21：FTP（文件传输）协议代理服务器常用端口 39000/40000：FTP被动模式常用端口 80/8080/3128/8081/9098：HTTP协议代理服务器常用端口号 1080：SOCKS代理协议服务器常用端口号 23：Telnet（不安全的文本传送） 69(udp)：TFTP（Trivial File Transfer Protocol） 25：SMTP Simple Mail Transfer Protocol（E-mail），默认端口号 110：POP3 Post Office Protocol（E-mail） 9080：Webshpere应用程序 9090：Webshpere管理工具 3389：Windows RDP远程登录 1521：Oracle数据库 3306：MySQL 11211：MEMCACHED 5432：PostgreSQL 1433：MS SQL 6379：Redis 8888：宝塔面板初始端口 888：宝塔面板phpmysql端口]]></content>
       <categories>
-        <category>Windows</category>
         <category>Linux</category>
       </categories>
       <tags>
-        <tag>Windows</tag>
         <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Windows 镜像下载]]></title>
     <url>%2F2019%2F09%2F19%2FWindows-%E9%95%9C%E5%83%8F%E4%B8%8B%E8%BD%BD%2F</url>
-    <content type="text"><![CDATA[Windows 镜像下载 Windows 10 Windows 10 (business editions), version 1903 (updated Aug 2019) (x64) - DVD (Chinese-Simplified) 文件名 cn_windows_10_business_editions_version_1903_updated_aug_2019_x64_dvd_3760ef19.iso SHA1 4846448F90F6DE70F054A2E1E24BE45C7BF9DC33 文件大小 4.85GB 发布时间 2019-08-21 ed2k://|file|cn_windows_10_business_editions_version_1903_updated_aug_2019_x64_dvd_3760ef19.iso|5205960704|9778A975BE33943A8F09B4D0D44848EC|/ Windows 7 Windows 7 Ultimate with Service Pack 1 (x64) - DVD (Chinese-Simplified) 文件名 cn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso SHA1 2CE0B2DB34D76ED3F697CE148CB7594432405E23 文件大小 3.19GB 发布时间 2011-05-12 ed2k://|file|cn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso|3420557312|B58548681854236C7939003B583A8078|/ Windows XP Windows XP Professional with Service Pack 3 (x86) - CD (Chinese-Simplified) 文件名 zh-hans_windows_xp_professional_with_service_pack_3_x86_cd_x14-80404.iso SHA1 69DBF131116760932DCF132ADE111D6B45778098 文件大小 601.04MB 发布时间 2008-05-01 ed2k://|file|zh-hans_windows_xp_professional_with_service_pack_3_x86_cd_x14-80404.iso|630239232|CD0900AFA058ACB6345761969CBCBFF4|/]]></content>
+    <content type="text"><![CDATA[镜像下载 Windows 10 Windows 10 (business editions), version 1903 (updated Aug 2019) (x64) - DVD (Chinese-Simplified) 文件名 cn_windows_10_business_editions_version_1903_updated_aug_2019_x64_dvd_3760ef19.iso SHA1 4846448F90F6DE70F054A2E1E24BE45C7BF9DC33 文件大小 4.85GB 发布时间 2019-08-21 ed2k://|file|cn_windows_10_business_editions_version_1903_updated_aug_2019_x64_dvd_3760ef19.iso|5205960704|9778A975BE33943A8F09B4D0D44848EC|/ Windows 7 Windows 7 Ultimate with Service Pack 1 (x64) - DVD (Chinese-Simplified) 文件名 cn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso SHA1 2CE0B2DB34D76ED3F697CE148CB7594432405E23 文件大小 3.19GB 发布时间 2011-05-12 ed2k://|file|cn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso|3420557312|B58548681854236C7939003B583A8078|/ Windows XP Windows XP Professional with Service Pack 3 (x86) - CD (Chinese-Simplified) 文件名 zh-hans_windows_xp_professional_with_service_pack_3_x86_cd_x14-80404.iso SHA1 69DBF131116760932DCF132ADE111D6B45778098 文件大小 601.04MB 发布时间 2008-05-01 ed2k://|file|zh-hans_windows_xp_professional_with_service_pack_3_x86_cd_x14-80404.iso|630239232|CD0900AFA058ACB6345761969CBCBFF4|/]]></content>
       <categories>
         <category>Windows</category>
       </categories>
