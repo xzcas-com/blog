@@ -273,7 +273,7 @@
                 
               
 
-              <time title="创建时间：2019-09-28 12:54:36 / 修改时间：13:22:46" itemprop="dateCreated datePublished" datetime="2019-09-28T12:54:36+08:00">2019-09-28</time>
+              <time title="创建时间：2019-09-28 12:54:36 / 修改时间：21:02:02" itemprop="dateCreated datePublished" datetime="2019-09-28T12:54:36+08:00">2019-09-28</time>
             </span>
           
             
@@ -305,14 +305,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="安全与隐私"><a href="#安全与隐私" class="headerlink" title="安全与隐私"></a>安全与隐私</h1><ul>
-<li>开启“允许任何来源”:<pre><code class="bash">sudo spctl --master-disable</code></pre>
+          <h1 id="Mac-权限问题"><a href="#Mac-权限问题" class="headerlink" title="Mac 权限问题"></a>Mac 权限问题</h1><h2 id="Mac安装软件允许任何来源"><a href="#Mac安装软件允许任何来源" class="headerlink" title="Mac安装软件允许任何来源"></a>Mac安装软件允许任何来源</h2><ul>
+<li><p>开启“允许任何来源”:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo spctl --master-disable</span><br></pre></td></tr></table></figure>
 </li>
-<li>关闭“允许任何来源”:<pre><code class="bash">sudo spctl --master-enable</code></pre>
+<li><p>关闭“允许任何来源”:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo spctl --master-enable</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>“通用”里有时没有“任何来源”这个选项时按上面方法解决：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">系统偏好设置 -&gt; 安全性与隐私 -&gt; 通用 -&gt; 选择“任何来源”</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
-<h1 id="处理Rootless"><a href="#处理Rootless" class="headerlink" title="处理Rootless"></a>处理Rootless</h1><ul>
-<li>查看是否开启了Rootless<br>在终端输入如下命令即可<pre><code class="bash">csrutil status</code></pre>
+<h2 id="处理Rootless"><a href="#处理Rootless" class="headerlink" title="处理Rootless"></a>处理Rootless</h2><ul>
+<li>查看Rootless状态<pre><code class="bash">csrutil status</code></pre>
 如果显示的是System Integrity Protection status: enabled.则表示已开启。<br>如果显示的是System Integrity Protection status: disabled.则表示没有开启。</li>
 <li>关闭Rootless<br>重启Mac，在听到经典的启动声后，按下command+R进入恢复模式，在菜单栏中实用工具找到终端(Terminal)，输入如下指令<pre><code class="bash">csrutil <span class="built_in">disable</span>; reboot</code></pre>
 电脑会重新启动，进入系统后可以使用查看方法查看是否关闭成功。</li>
