@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Mac 权限问题]]></title>
     <url>%2F2019%2F09%2F28%2FMac-%E6%9D%83%E9%99%90%E9%97%AE%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[Mac 权限问题Mac安装软件允许任何来源 开启“允许任何来源”: 1sudo spctl --master-disable 关闭“允许任何来源”: 1sudo spctl --master-enable “通用”里有时没有“任何来源”这个选项时按上面方法解决： 1系统偏好设置 -&gt; 安全性与隐私 -&gt; 通用 -&gt; 选择“任何来源” 处理Rootless 查看Rootless状态csrutil status 如果显示的是System Integrity Protection status: enabled.则表示已开启。如果显示的是System Integrity Protection status: disabled.则表示没有开启。 关闭Rootless重启Mac，在听到经典的启动声后，按下command+R进入恢复模式，在菜单栏中实用工具找到终端(Terminal)，输入如下指令csrutil disable; reboot 电脑会重新启动，进入系统后可以使用查看方法查看是否关闭成功。 开启Rootless重启Mac，在听到经典的启动声后，按下command+R进入恢复模式，在菜单栏中实用工具找到终端(Terminal)，输入如下指令csrutil enable; reboot 电脑会重新启动，进入系统后可以使用查看方法查看是否开启成功。]]></content>
+    <content type="text"><![CDATA[Mac 权限问题允许任何来源 开启“允许任何来源”: 1sudo spctl --master-disable 关闭“允许任何来源”: 1sudo spctl --master-enable “通用”里有时没有“任何来源”这个选项时按上面方法解决： 1系统偏好设置 -&gt; 安全性与隐私 -&gt; 通用 -&gt; 选择“任何来源” 处理Rootless 查看Rootless状态csrutil status 如果显示的是System Integrity Protection status: enabled.则表示已开启。如果显示的是System Integrity Protection status: disabled.则表示没有开启。 关闭Rootless重启Mac，在听到经典的启动声后，按下command+R进入恢复模式，在菜单栏中实用工具找到终端(Terminal)，输入如下指令csrutil disable; reboot 电脑会重新启动，进入系统后可以使用查看方法查看是否关闭成功。 开启Rootless重启Mac，在听到经典的启动声后，按下command+R进入恢复模式，在菜单栏中实用工具找到终端(Terminal)，输入如下指令csrutil enable; reboot 电脑会重新启动，进入系统后可以使用查看方法查看是否开启成功。]]></content>
       <categories>
         <category>Mac</category>
       </categories>
