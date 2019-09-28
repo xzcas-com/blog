@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Mac 权限问题]]></title>
+    <url>%2F2019%2F09%2F28%2FMac-%E6%9D%83%E9%99%90%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[安全与隐私 开启“允许任何来源”:sudo spctl --master-disable 关闭“允许任何来源”:sudo spctl --master-enable 处理Rootless 查看是否开启了Rootless在终端输入如下命令即可csrutil status 如果显示的是System Integrity Protection status: enabled.则表示已开启。如果显示的是System Integrity Protection status: disabled.则表示没有开启。 关闭Rootless重启Mac，在听到经典的启动声后，按下command+R进入恢复模式，在菜单栏中实用工具找到终端(Terminal)，输入如下指令csrutil disable; reboot 电脑会重新启动，进入系统后可以使用查看方法查看是否关闭成功。 开启Rootless重启Mac，在听到经典的启动声后，按下command+R进入恢复模式，在菜单栏中实用工具找到终端(Terminal)，输入如下指令csrutil enable; reboot 电脑会重新启动，进入系统后可以使用查看方法查看是否开启成功。]]></content>
+      <categories>
+        <category>Mac</category>
+      </categories>
+      <tags>
+        <tag>Mac</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Linux 默认端口]]></title>
     <url>%2F2019%2F09%2F26%2FLinux-%E9%BB%98%E8%AE%A4%E7%AB%AF%E5%8F%A3%2F</url>
     <content type="text"><![CDATA[默认端口 22：SSH（安全登录）、SCP（文件传输）、端口号重定向 21：FTP（文件传输）协议代理服务器常用端口 39000/40000：FTP被动模式常用端口 80/8080/3128/8081/9098：HTTP协议代理服务器常用端口号 1080：SOCKS代理协议服务器常用端口号 23：Telnet（不安全的文本传送） 69(udp)：TFTP（Trivial File Transfer Protocol） 25：SMTP Simple Mail Transfer Protocol（E-mail），默认端口号 110：POP3 Post Office Protocol（E-mail） 9080：Webshpere应用程序 9090：Webshpere管理工具 3389：Windows RDP远程登录 1521：Oracle数据库 3306：MySQL 11211：MEMCACHED 5432：PostgreSQL 1433：MS SQL 6379：Redis 8888：宝塔面板初始端口 888：宝塔面板phpmysql端口]]></content>
