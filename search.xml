@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Linux 常用命令]]></title>
+    <url>%2F2019%2F10%2F01%2FLinux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[常用命令目录1$ pwd 显示当前工作目录的路径 1$ cd &lt;directory&gt; 将当前目录更改为&lt;directory&gt; 1$ cd .. 返回到上级目录 1$ ls 列出当前目录内容 1$ ls -la 列出详细的目录内容，包含隐藏文件 1$ mkdir &lt;directory&gt; 创建名为&lt;directory&gt;的文件夹 输出1$ cat &lt;file&gt; 输出&lt;file&gt;文件中的内容 1$ less &lt;file&gt; 输出&lt;file&gt;文件中的内容，使用less命令（支持分页等。） 1$ haed &lt;file&gt; 输出&lt;file&gt;文件中的前10行的内容 1$ &lt;cmd&gt; &gt; &lt;file&gt; 将&lt;cmd&gt;的输出保存到&lt;file&gt;文件 1$ &lt;cmd&gt; &gt;&gt; &lt;file&gt; 将&lt;cmd&gt;的输出追加到&lt;file&gt;文件 1$ &lt;cmd1&gt; | &lt;cmd2&gt; 将&lt;cmd1&gt;的输出作为&lt;cmd2&gt;的操作对象 1$ clear 清除命令行窗口 文件1$ rm &lt;file&gt; 删除&lt;file&gt;文件 1$ rm -r &lt;directory&gt; 删除&lt;directory&gt;目录 1$ rm -f &lt;file&gt; 强制删除&lt;file&gt;，增加 -r 可以强制删除目录 1$ mv &lt;file-old&gt; &lt;file-new&gt; 重命名&lt;file-old&gt;为&lt;file-new&gt; 1$ mv &lt;file&gt; &lt;directory&gt; 移动&lt;file&gt;文件到&lt;directory&gt;目录（如果目录中已经有这个文件会被覆盖） 1$ cp &lt;file&gt; &lt;directory&gt; 复制&lt;file&gt;文件到&lt;directory&gt;目录（如果目录中已经有这个文件会被覆盖） 1$ cp -r &lt;directory1&gt; &lt;directory2&gt; 复制&lt;directory1&gt;目录到&lt;directory2&gt;目录（可能会覆盖现有目录中的文件） 1$ touch &lt;file&gt; 更改&lt;file&gt;文件的访问和修改时间（如果检测不到这个文件则创建这个文件） 权限1$ chmod 755 &lt;file&gt; 更改&lt;file&gt;文件的权限为755 1$ chmod -R 600 &lt;directory&gt; 更改&lt;directory&gt;文件夹和里面的文件的权限为600 1$ chown &lt;user&gt;:&lt;group&gt; &lt;file&gt; 更改&lt;file&gt;文件的所属用户和用户组（增加 -R 包含目录中的文件） 搜索1$ find &lt;dir&gt; -name "&lt;file&gt;" 在&lt;dir&gt;目录中查找&lt;file&gt;文件（使用通配符[*]搜索文件名的一部分，例如：”file.*“ ) 1$ grep "&lt;text&gt;" &lt;file&gt; 输出&lt;file&gt;文件中所有出现的&lt;text&gt;（添加 -i 表示不区分大小写) 1$ grep -rl "&lt;text&gt;" &lt;dir&gt; 在&lt;dir&gt;目录中搜索所有文件内容为&lt;text&gt; 网络1$ ping &lt;host&gt; Ping &lt;host&gt; 显示状态 1$ whois &lt;domain&gt; 显示域名 &lt;domain&gt; 的信息 1$ curl -o &lt;url/to/file&gt; 下载&lt;file&gt;文件（通过HTTP[S]或FTP） 1$ ssh &lt;username&gt;@&lt;host&gt; 使用&lt;username&gt;建立并通过ssh连接到&lt;host&gt; 1$ scp &lt;file&gt; &lt;username&gt;@&lt;host&gt;:/remote/path 复制&lt;file&gt;到远程&lt;host&gt; 进程1$ ps ax 输出当前正在运行的进程 1$ top 显示当前运行的进程的实时信息 1$ kill &lt;pid&gt; 用&lt;pid&gt;退出进程]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Mac 权限问题]]></title>
     <url>%2F2019%2F09%2F28%2FMac-%E6%9D%83%E9%99%90%E9%97%AE%E9%A2%98%2F</url>
     <content type="text"><![CDATA[Mac 权限问题允许任何来源 开启“允许任何来源”: 1sudo spctl --master-disable 关闭“允许任何来源”: 1sudo spctl --master-enable “通用”里有时没有“任何来源”这个选项时按上面方法解决： 1系统偏好设置 -&gt; 安全性与隐私 -&gt; 通用 -&gt; 选择“任何来源” 处理Rootless 查看Rootless状态csrutil status 如果显示的是System Integrity Protection status: enabled.则表示已开启。如果显示的是System Integrity Protection status: disabled.则表示没有开启。 关闭Rootless重启Mac，在听到经典的启动声后，按下command+R进入恢复模式，在菜单栏中实用工具找到终端(Terminal)，输入如下指令csrutil disable; reboot 电脑会重新启动，进入系统后可以使用查看方法查看是否关闭成功。 开启Rootless重启Mac，在听到经典的启动声后，按下command+R进入恢复模式，在菜单栏中实用工具找到终端(Terminal)，输入如下指令csrutil enable; reboot 电脑会重新启动，进入系统后可以使用查看方法查看是否开启成功。]]></content>
